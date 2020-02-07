@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'/>
+</head>
+<body>
+	<p id="demo"></p>
+	<script>
+        var text = "";
+		for (var i = 0; i < 101; i++) {
+			if (i > 0) {
+				text += "<br>"
+			}
+			if (i%3===0) {
+				text += "Zero";
+				if (i%5===0) {
+					text += "Cool";
+				}
+			} else if (i%5===0) {
+				text += "Cool";
+			} else {
+				text += i;
+			}
+		}
+		document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

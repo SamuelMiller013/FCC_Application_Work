@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+}
+
+.item2 { 
+	grid-area: title; 
+	display: grid;
+	background-color: #F2F2F2;
+	padding: 10px;
+	grid-gap: 25px;
+}
+
+.item1 { 
+	grid-area: body; 
+	display: grid;
+	background-color: #F2F2F2;
+	padding: 10px;
+	grid-gap: 25px;
+}
+	
+.item4 { 
+	grid-area: social; 
+	display: grid;
+	background-color: #F2F2F2;
+	padding: 10px;
+	grid-gap: 25px;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding: 20px 0;
+}
+
+.grid-container {
+	display: grid;
+	padding: 10px;
+	background-color: #F2F2F2;
+}
+
+.sub_header{
+	color: blue;
+}
+
+.right {
+	text-align: left;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+	.grid-container {
+		grid-template-areas: 
+			'title'
+			'social'
+			'body';
+	}
+	
+	.item2 {
+		grid-template-columns: 100%;
+	}
+	
+	.item1 { 
+		grid-template-columns: 100%;
+	}
+		
+	.item4 { 
+		grid-template-columns: 100%;
+	}
+	
+	.left {
+		text-align: left;
+	}
+	
+	.item4 img {	
+		display: inline-block;
+		width: 10%;
+		vertical-align: left;
+		padding: 0px 20px 0px 20px;
+	}
+	
+	.grid-container > div {
+		background-color: #F2F2F2;
+		padding: 20px 0;
+	}
+
+	.grid-container h3 {
+		font-size: 72px;
+	}
+
+	.grid-container h4 {
+		font-size: 54px;
+	}
+
+	.grid-container p {
+		padding: 20px 0;
+		font: 15px arial, sans-serif;
+		font-size: 48px;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 601px){
+	.grid-container {
+		grid-template-areas: 
+			'title social'
+			'body social';
+	}
+	
+	.item2 {
+		grid-template-columns: 35% 65%;
+	}
+	
+	.item1 img { 
+		width: 100%;
+		height: auto;
+	}
+	
+	.item1 { 
+		grid-template-columns: 35% 65%;
+	}
+		
+	.item4 { 
+		grid-template-columns: auto;
+	}
+	
+	.item4 img {	
+		display: inline-block;
+		width: 50%;
+		vertical-align: middle;
+		padding: 20px 0px 20px 0px;
+	}
+	
+	.left {
+		text-align: right;
+	}
+	
+	.grid-container > div {
+		background-color: #F2F2F2;
+		padding: 20px 0;
+	}
+
+	.grid-container h3 {
+		font-size: 48px;
+	}
+
+	.grid-container h4 {
+		font-size: 32px;
+	}
+
+	.grid-container p {
+		padding: 20px 0;
+		font: 15px arial, sans-serif;
+		font-size: 24px;
+	}
+}
+

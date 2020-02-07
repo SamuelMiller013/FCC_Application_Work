@@ -1,0 +1,50 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+.widget {
+	width: 300px;
+	height: 600px;
+	background-color: #E5CECF;
+}
+
+.breaking {
+	margin: auto;
+	width: 50%;
+}
+.blink {
+	text-align: left;
+	font-size: 32;
+}
+
+.heading {
+	margin: 0px 20px 0px 0px;
+	padding: 5px;
+	display: block;
+	text-overflow: ellipsis;
+	color: 
+}
+
+.heading a {
+	display: block;	
+}
+
+.title {
+	font-size: 18;	
+}
+
+.domain {
+	font-size: 12;	
+}
+
+.url {
+	font-size: 18;	
+}
+
+.url, a {
+	white-space: nowrap;
+    width:275px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

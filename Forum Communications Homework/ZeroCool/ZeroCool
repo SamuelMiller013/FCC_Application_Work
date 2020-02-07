@@ -1,0 +1,14 @@
+for (var i = 0; i < 101; i++) {
+	var myText = "";
+	if (i%3===0) {
+		myText += "Zero";
+		if (i%5===0) {
+			myText += "Cool";
+		}
+	} else if (i%5===0) {
+		myText += "Cool";
+	} else {
+		myText += i;
+	}
+	console.log(myText);
+}
